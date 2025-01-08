@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Generator</title>
+    <link href="cv-gen.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Cedarville+Cursive&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Cedarville+Cursive&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AU+QLD+Guides&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1 class="bodyh">Create Your CV Instantly!</h1>
+    <p class="bodyp">Fill in the form below</p>
+    <form id="cvForm" method="POST">
+        <section>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" placeholder="Enter your first name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" placeholder="Enter your last name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="joannaenoch@gmail.com">
+            
+            <label for="about">About:</label>
+            <textarea rows="4" cols="65" class="textz" placeholder="Say a little about yourself" id="textspace-one" class="textfield"></textarea>
+            
+            <label for="profile-image">Profile Image:</label>
+            <input type="file" id="file" accept="image/*" class="textz" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="number" placeholder="e.g 08153086561" class="textz">
+            
+            <label for="address">Address:</label>
+            <input type="text" id="textTwo" placeholder="e.g No 10 Centenary Gardens" class="textz">
+            
+            <label for="certificate">Certificate: </label>
+            <select name="dropdown" id="dropdown">
+                <option value="PHD">PHD</option>
+                <option value="Masters">Masters</option>
+                <option value="BSc">BSc</option>
+                <option value="High School Diploma">High School Diploma</option>
+            </select>
+            
+            <label for="job-experience-internships">Job Experience or Internship(s): </label>
+            <textarea rows="4" cols="65" id="textspace-three" class="textz" required></textarea>
+            
+            <label for="skills">Skills: </label>
+            <textarea rows="4" cols="65" id="textspace-four" class="textz" required></textarea>
+            
+            <label for="interest">Interests:</label>
+            <textarea id="textspace-five" class="textz" placeholder="I love to watch reels on instagram..."  required ></textarea>
+            
+            <button type="submit" id="submitBtn">Generate CV</button>
+        </section>
+    </form>
+<div class="cvcont">
+    <div class="class-one">
+        <div class="sub-one"></div>
+        <div class="sub-two"></div>
+    </div>
+    <div class="class-two"></div>
+    <button type="button" class="cv-btn" id="cv-button">Download Cv</button>
+</div>
+    <script src="cv-gen.js"></script>
+</body>
+</html>
