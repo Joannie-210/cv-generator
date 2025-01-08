@@ -67,7 +67,7 @@ function generateCV(data) {
   subTwo.style.justifyContent = "center";
   subTwo.style.alignItems = "start";
 subTwo.style.flexWrap = "wrap";
-subTwo.style.backgroundColor = "plum";
+subTwo.style.backgroundColor = "purple";
 
   const divTwo = document.querySelector(".class-two");
   divTwo.style.width = "90%";
